@@ -33,7 +33,7 @@ h4 {
 }
 
 #body {
-    background-image: url("/Imagens/Back-ground.png");
+    background-image: url("../images/background-main.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,5 +52,5 @@ h4 {
 }
 
 #fundo {
-    background-image: url("/Imagens/fundo.png");
+    background-image: url("../images/background.png");
 }
