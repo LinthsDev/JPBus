@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: url("Imagens/fundo.png") center / cover fixed;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho {
+    padding: 10px 20px;
+    background-color: #09468d;
+    color: white;
+    text-align: center;
+}
+
+#cabecalho h1 {
+    margin: 8px 0;
+}
+
+#cabecalho a {
+    color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 710px;
+    margin: 24px auto;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #09468d;
+    font-family: Georgia, serif;
+}
+
+.card p,
+.card li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card ul {
+    padding-left: 22px;
+}
+
+.lembrete {
+    padding: 12px;
+    border-radius: 8px;
+    background: #eff6ff;
+}
+
+footer {
+    padding: 16px;
+    color: white;
+    background: #333;
+    text-align: center;
+}
+
+@media (max-width: 560px) {
+    main {
+        width: 94%;
+        margin: 16px auto;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}

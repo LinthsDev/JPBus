@@ -6,6 +6,8 @@
 }
 
 
+
+
 #principal {
     margin-left: 20%;
     height: 350px;
@@ -30,7 +32,7 @@ h4 {
     font-weight: bold;
 }
 
-body {
+#body {
     background-image: url("/Imagens/Back-ground.png");
     background-size: cover;
     background-position: center;
@@ -45,13 +47,10 @@ body {
     margin: 20px auto;
     width: 90%;
     max-width: 710px;
-
-    /* Efeito de transparência */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-
-    /* Sombra */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-
     text-align: center;
+
+}
+
+#fundo {
+    background-image: url("/Imagens/fundo.png");
 }
