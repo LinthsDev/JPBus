@@ -38,6 +38,7 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
 }
 
 .card {
@@ -53,4 +54,33 @@ h4 {
 
 #fundo {
     background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3,h4 {
+    animation: aparecer 1s ease-out;
+}
+
+.card,p,#footer{
+    animation: aparecer 1s ease-out;
+}
+
+.espaço
+{
+    margin-bottom: 20px;
 }
