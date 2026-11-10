@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Painéis informativos do JPBus">
 
     <title>Painéis | JPBus</title>
 
-    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
 </head>
 
 <body>
 
     <div id="fundo">
 
-        <div id="cabeçalho">
+       <div id="cabeçalho">
             <header>
                 <h1><i>JPBus</i></h1>
 
@@ -27,50 +28,55 @@
             </header>
         </div>
 
-        <hr>
 
         <main>
 
-            <!-- PAINÉIS INFORMATIVOS -->
-            <section>
+            <section class="conteudo">
 
-                <div style="text-align: center;">
+                <!-- APRESENTAÇÃO DOS PAINÉIS -->
 
-                    <div class="card">
+                <article class="card">
 
-                        <h3>Painéis informativos nas paradas</h3>
+                    <h2>Painéis informativos nas paradas</h2>
 
-                        <p>
-                            A proposta consiste na instalação de telões digitais
-                            nas paradas de ônibus de João Pessoa, conectados a
-                            uma central de monitoramento responsável por receber
-                            e atualizar informações sobre o transporte público.
-                        </p>
+                    <p>
+                        A proposta consiste na instalação de telões digitais
+                        nas paradas de ônibus de João Pessoa, conectados a
+                        uma central de monitoramento responsável por receber
+                        e atualizar informações sobre o transporte público.
+                    </p>
 
-                        <img src="/assets/images/telao-parada.png" alt="Tela informativa de parada" width="500"
-                            class="espaço">
+                    <img
+                        src="../assets/images/telao-parada.png"
+                        alt="Tela informativa instalada em uma parada de ônibus"
+                        width="600"
+                        class="espaco"
+                    >
 
-                        <p>Exemplo da interface gráfica</p>
+                    <p>Exemplo da interface gráfica:</p>
 
-                        <iframe src="telas-ficiticias/tela-ficiticia-parada.html" width="100%" height="600px"
-                            title="Exemplo da interface do painel informativo">
-                        </iframe>
+                    <iframe
+                        src="./telas-ficiticias/tela-ficiticia-parada.html"
+                        width="100%"
+                        height="600"
+                        title="Exemplo da interface do painel informativo"
+                        loading="lazy">
+                    </iframe>
 
-                    </div>
+                </article>
 
-                </div>
-            </section>
 
-            <section>
-                <!-- PAINÉIS DIGITAIS NAS PARADAS -->
+                <!-- 01. PAINÉIS DIGITAIS NAS PARADAS -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        Painéis digitais nas paradas
+
+                    <summary class="card">
+                        01. Painéis digitais nas paradas
                     </summary>
 
                     <div class="card">
 
-                        <h2>01. Painéis digitais inteligentes nas paradas</h2>
+                        <h2>Painéis digitais inteligentes nas paradas</h2>
 
                         <h3>O que são?</h3>
 
@@ -104,6 +110,7 @@
                         <h3>Principais funcionalidades</h3>
 
                         <ul>
+
                             <li>
                                 <strong>Previsão de chegada:</strong>
                                 apresentar o tempo estimado para a chegada
@@ -147,6 +154,7 @@
                                 as 24 horas do dia, conforme a disponibilidade
                                 de energia e conexão do equipamento.
                             </li>
+
                         </ul>
 
                         <h3>Exemplo prático de funcionamento</h3>
@@ -160,7 +168,10 @@
                         </p>
 
                         <ol>
-                            <li>O passageiro chega à parada e consulta o painel.</li>
+
+                            <li>
+                                O passageiro chega à parada e consulta o painel.
+                            </li>
 
                             <li>
                                 O painel apresenta as linhas disponíveis
@@ -182,21 +193,25 @@
                                 O painel recebe a atualização e apresenta
                                 a nova previsão ao passageiro.
                             </li>
+
                         </ol>
 
                     </div>
+
                 </details>
 
 
-                <!-- INFORMAÇÕES EXIBIDAS NOS PAINÉIS -->
+                <!-- 02. INFORMAÇÕES EXIBIDAS NOS PAINÉIS -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        Informações exibidas nos painéis
+
+                    <summary class="card">
+                        02. Informações exibidas nos painéis
                     </summary>
 
                     <div class="card">
 
-                        <h2>02. Quais informações serão apresentadas nos painéis?</h2>
+                        <h2>Quais informações serão apresentadas nos painéis?</h2>
 
                         <h3>Informações disponíveis para os passageiros</h3>
 
@@ -208,6 +223,7 @@
                         </p>
 
                         <ul>
+
                             <li>
                                 <strong>Número e identificação da linha:</strong>
                                 identificação do ônibus que realiza determinado percurso.
@@ -236,21 +252,25 @@
                                 notificações sobre alterações de itinerário,
                                 interrupções ou problemas no transporte.
                             </li>
+
                         </ul>
 
                     </div>
+
                 </details>
 
 
-                <!-- ATUALIZAÇÃO DOS DADOS -->
+                <!-- 03. ATUALIZAÇÃO DOS DADOS -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        Atualização das informações
+
+                    <summary class="card">
+                        03. Atualização das informações
                     </summary>
 
                     <div class="card">
 
-                        <h2>03. Como os painéis recebem as informações?</h2>
+                        <h2>Como os painéis recebem as informações?</h2>
 
                         <h3>Integração com a central JPBus</h3>
 
@@ -272,6 +292,7 @@
                         <h3>Etapas de atualização</h3>
 
                         <ol>
+
                             <li>
                                 <strong>Rastreamento GPS:</strong>
                                 identifica a localização e o deslocamento dos ônibus.
@@ -300,21 +321,25 @@
                                 apresenta os horários previstos e os avisos
                                 relacionados ao transporte público.
                             </li>
+
                         </ol>
 
                     </div>
+
                 </details>
 
 
-                <!-- COMUNICAÇÃO DE ATRASOS -->
+                <!-- 04. COMUNICAÇÃO DE ATRASOS -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        Comunicação de atrasos e ocorrências
+
+                    <summary class="card">
+                        04. Comunicação de atrasos e ocorrências
                     </summary>
 
                     <div class="card">
 
-                        <h2>04. Como os painéis informam possíveis atrasos?</h2>
+                        <h2>Como os painéis informam possíveis atrasos?</h2>
 
                         <h3>Exemplo prático</h3>
 
@@ -334,9 +359,14 @@
                         </p>
 
                         <ol>
-                            <li>O ônibus encontra um congestionamento.</li>
 
-                            <li>O motorista registra a ocorrência no tablet.</li>
+                            <li>
+                                O ônibus encontra um congestionamento.
+                            </li>
+
+                            <li>
+                                O motorista registra a ocorrência no tablet.
+                            </li>
 
                             <li>
                                 O GPS continua transmitindo a localização
@@ -355,21 +385,25 @@
                                 O painel apresenta a nova estimativa e o aviso
                                 de atraso aos passageiros.
                             </li>
+
                         </ol>
 
                     </div>
+
                 </details>
 
 
-                <!-- BENEFÍCIOS -->
+                <!-- 05. BENEFÍCIOS -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        Benefícios dos painéis digitais
+
+                    <summary class="card">
+                        05. Benefícios dos painéis digitais
                     </summary>
 
                     <div class="card">
 
-                        <h2>05. Benefícios dos painéis digitais</h2>
+                        <h2>Benefícios dos painéis digitais</h2>
 
                         <p>
                             A implementação dos painéis digitais busca proporcionar
@@ -379,6 +413,7 @@
                         </p>
 
                         <ul>
+
                             <li>
                                 <strong>Mais acessibilidade:</strong>
                                 informações disponíveis diretamente nas paradas,
@@ -415,21 +450,25 @@
                                 possibilidade de consultar informações a qualquer
                                 horário, inclusive durante a noite.
                             </li>
+
                         </ul>
 
                     </div>
+
                 </details>
 
 
-                <!-- CONCLUSÃO -->
+                <!-- 06. CONCLUSÃO -->
+
                 <details>
-                    <summary style="text-align: center;" class="card">
-                        O papel dos painéis na modernização do transporte
+
+                    <summary class="card">
+                        06. O papel dos painéis na modernização do transporte
                     </summary>
 
                     <div class="card">
 
-                        <h2>06. O papel dos painéis na modernização do transporte</h2>
+                        <h2>O papel dos painéis na modernização do transporte</h2>
 
                         <p>
                             Os painéis digitais representam um dos principais
@@ -450,19 +489,19 @@
                         </p>
 
                     </div>
+
                 </details>
+
             </section>
 
-
-
-            <footer id="footer" style="background-color: #09468d; ">
-
-                <p>Direito reservados pela JPBus</p>
-
-            </footer>
-
-
         </main>
+
+
+         <footer id="footer" style="background-color: #09468d; ">
+
+        <p>Direito reservados pela JPBus</p>
+
+    </footer>
 
     </div>
 
