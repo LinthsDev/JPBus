@@ -2,28 +2,28 @@
 
 ## 📌 Sobre o projeto
 
-O **JPBus** é uma proposta de modernização do transporte público de João Pessoa, Paraíba, com o objetivo de melhorar a comunicação entre passageiros, motoristas e a central de monitoramento.
+O **JPBus** é um projeto acadêmico que propõe melhorias para o transporte público de João Pessoa, Paraíba, por meio da tecnologia e da comunicação entre passageiros, motoristas e uma central de monitoramento.
 
-A ideia é desenvolver um sistema próprio de acompanhamento dos ônibus, utilizando tecnologias de rastreamento GPS, comunicação em tempo real e painéis digitais instalados nas paradas.
+A proposta consiste em desenvolver um sistema próprio para acompanhar a localização dos ônibus, calcular previsões de chegada e informar os passageiros sobre atrasos, ocorrências e alterações no transporte público.
 
-O projeto busca proporcionar mais transparência, organização e previsibilidade aos usuários do transporte público, permitindo que tenham acesso a informações sobre a localização dos ônibus, previsões de chegada e possíveis atrasos.
+O projeto apresenta soluções como rastreamento GPS, tablets para motoristas e painéis digitais nas paradas de ônibus.
 
 ## 🎯 Objetivos
 
 - Melhorar a comunicação entre passageiros e motoristas.
-- Permitir o acompanhamento da localização dos ônibus.
-- Desenvolver um sistema de previsão do tempo de chegada.
-- Informar passageiros sobre atrasos e imprevistos.
-- Implementar painéis digitais nas paradas de ônibus.
-- Centralizar informações para facilitar o monitoramento do transporte público.
+- Facilitar o acompanhamento dos ônibus.
+- Oferecer previsões de chegada mais precisas.
+- Informar sobre atrasos e imprevistos.
+- Modernizar a comunicação nas paradas de ônibus.
+- Proporcionar mais transparência e organização no transporte público.
 
 ## ⚙️ Funcionalidades propostas
 
 ### 1. Rastreamento GPS
 
-Instalação de rastreadores GPS nos ônibus para identificar sua localização durante o percurso.
+Utilização de rastreadores GPS instalados nos ônibus para identificar sua localização durante o percurso.
 
-Os dados coletados poderão ser utilizados para calcular distâncias, velocidades e previsões de chegada às próximas paradas.
+As informações coletadas poderão ser utilizadas para calcular distâncias, velocidades e previsões de chegada às próximas paradas.
 
 ### 2. Tablet para os motoristas
 
@@ -52,13 +52,13 @@ Os painéis poderão apresentar:
 
 ### 4. Sistema de cálculo da previsão de chegada
 
-O JPBus propõe um sistema de cálculo que utiliza informações coletadas pelos rastreadores GPS e pelos motoristas.
+O sistema propõe utilizar informações dos rastreadores GPS e das ocorrências comunicadas pelos motoristas para estimar o tempo de chegada dos ônibus.
 
 A fórmula básica utilizada como referência é:
 
 **Tempo estimado = Distância ÷ Velocidade média**
 
-Além disso, o sistema poderá considerar fatores como condições do trânsito, ocorrências e alterações no percurso para atualizar as previsões.
+O cálculo também poderá considerar as condições do trânsito e outros acontecimentos que possam alterar o tempo do percurso.
 
 ### 5. Aplicativo para passageiros
 
@@ -75,38 +75,54 @@ Como possibilidade de expansão futura, o projeto prevê o desenvolvimento de um
 
 ## 🛠️ Tecnologias utilizadas
 
-As tecnologias utilizadas na apresentação web do projeto incluem:
-
-- **HTML5:** estruturação e organização do conteúdo.
-- **CSS3:** estilização, identidade visual e responsividade.
-
-> O rastreamento GPS, os tablets, a central de monitoramento e os painéis digitais fazem parte da proposta de funcionamento do sistema e não devem ser confundidos com funcionalidades já implementadas na página de apresentação.
+- **HTML5:** estruturação das páginas e organização do conteúdo.
+- **CSS3:** estilização, identidade visual e organização dos elementos.
+- **Visual Studio Code:** ambiente utilizado no desenvolvimento.
 
 ## 📁 Estrutura do projeto
 
 ```text
 JPBus/
 │
-├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── home.css
+│   │   ├── style.css
+│   │   └── tela-parada.css
+│   │
+│   ├── images/
+│   │
+│   └── video/
+│       └── .gitkeep
 │
-├── css/
-│   └── style.css
-│
-├── imagens/
-│   ├── fundo-jpbus.png
-│   └── ...
+├── html/
+│   ├── telas-ficticias/
+│   │
+│   ├── calculos.html
+│   ├── home.html
+│   ├── paineis-parada.html
+│   └── telas-onibus2.html
 │
 └── README.md
 ```
 
-*A estrutura acima é uma sugestão de organização dos arquivos.*
+## 📄 Páginas do projeto
+
+| Arquivo | Descrição |
+|---|---|
+| `home.html` | Página principal de apresentação do JPBus. |
+| `calculos.html` | Explicação dos cálculos utilizados para estimar a chegada dos ônibus. |
+| `paineis-parada.html` | Apresentação da proposta dos painéis digitais nas paradas. |
+| `telas-onibus2.html` | Apresentação das telas e funcionalidades relacionadas aos ônibus. |
+| `telas-ficticias/` | Diretório destinado às telas ilustrativas do projeto. |
 
 ## 🚀 Como executar o projeto
 
-1. Faça o download ou clone este repositório.
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Localize o arquivo `index.html`.
-4. Abra o arquivo no navegador ou utilize a extensão Live Server.
+1. Baixe ou clone o repositório.
+2. Abra a pasta `JPBus` no Visual Studio Code.
+3. Localize a pasta `html`.
+4. Abra o arquivo `home.html` no navegador.
+5. Para facilitar a visualização, também é possível utilizar a extensão Live Server.
 
 ## 🌱 Possibilidades futuras
 
@@ -114,11 +130,11 @@ JPBus/
 - Integração com rastreadores GPS.
 - Implementação do sistema de comunicação dos motoristas.
 - Instalação dos painéis digitais nas paradas.
-- Desenvolvimento do aplicativo para passageiros.
-- Integração de dados de trânsito para melhorar as previsões.
+- Desenvolvimento de um aplicativo para passageiros.
+- Integração com informações sobre o trânsito.
 
-## 👥 Sobre
+## 👥 Sobre o projeto
 
-O JPBus é um projeto acadêmico de proposta tecnológica voltado à melhoria da mobilidade urbana e da comunicação no transporte público de João Pessoa, Paraíba.
+O JPBus é um projeto acadêmico voltado à inovação tecnológica e à melhoria da mobilidade urbana em João Pessoa, Paraíba.
 
 **JPBus — Mais informação, comunicação e eficiência no transporte público.**
