@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Métodos de cálculo do JPBus">
+    <meta name="description" content="Entenda como o JPBus calcula previsões de chegada, atrasos e informações do transporte público.">
 
     <title>Métodos de cálculo | JPBus</title>
 
@@ -13,36 +13,174 @@
 
 <body>
 
-    <div id="fundo">
+    <div id="fundo-calculo">
 
         <div id="cabeçalho">
             <header>
                 <h1><i>JPBus</i></h1>
-
                 <div style="text-align: center; font-size: 20px;">
-                    <a style="color: white;" href="./home.html">
-                        Página inicial
-                    </a>
+                    <a style="color: white;" href="./home.html">Página inicial</a>
                 </div>
             </header>
         </div>
 
-        <hr>
-
         <main>
-            <section>
-                <div style="text-align: center;">
-                    <div class="card">
-                        <h3>Métodos de cálculo</h3>
+            <section class="conteudo">
+
+                <article class="card">
+                    <h2>Métodos de cálculo do JPBus</h2>
+                    <p>
+                        O JPBus reúne dados de localização dos ônibus, horários programados,
+                        histórico de viagens e condições do percurso para estimar chegadas,
+                        identificar atrasos e manter as informações das linhas atualizadas.
+                    </p>
+                    <img
+                        src="../assets/images/foto-calculos.png"
+                        alt="Infográfico sobre os métodos de cálculo do JPBus"
+                        width="600"
+                        class="espaço"
+                        style="max-width: 100%; height: auto;"
+                    >
+                </article>
+
+                <details>
+                    <summary class="card">01. Dados usados nos cálculos</summary>
+                    <article class="card">
+                        <h2>De onde vêm as informações?</h2>
                         <p>
-                            O sistema pode calcular tempos de chegada, atrasos e eficiência do transporte
-                            com base em dados de GPS, horários programados e rotas monitoradas em tempo real.
+                            Para produzir estimativas úteis, o sistema combina informações de
+                            diferentes fontes. Cada atualização ajuda a entender onde o ônibus
+                            está, para onde está indo e quanto tempo pode levar até os próximos pontos.
                         </p>
-                        <img src="../assets/images/infographic.png" alt="Infográfico dos métodos de cálculo" width="600">
-                    </div>
-                </div>
+                        <ul>
+                            <li><strong>Localização GPS:</strong> posição e deslocamento do veículo ao longo da rota.</li>
+                            <li><strong>Horários programados:</strong> previsão oficial de passagem em cada parada.</li>
+                            <li><strong>Histórico de viagens:</strong> duração observada em viagens anteriores, por linha e trecho.</li>
+                            <li><strong>Ocorrências:</strong> registros de trânsito, desvios, bloqueios ou outros imprevistos.</li>
+                            <li><strong>Atualizações recentes:</strong> novos dados recebidos do ônibus e da central de monitoramento.</li>
+                        </ul>
+                        <p>
+                            A disponibilidade e a precisão da previsão dependem da qualidade e da
+                            frequência desses dados. Quando não há uma posição recente, o sistema
+                            pode apresentar o horário programado ou indicar que a estimativa está indisponível.
+                        </p>
+                    </article>
+                </details>
+
+                <details>
+                    <summary class="card">02. Previsão de chegada</summary>
+                    <article class="card">
+                        <h2>Como é estimado o tempo até a parada?</h2>
+                        <p>
+                            O sistema acompanha o ônibus na rota e estima o tempo que falta para
+                            chegar à parada escolhida. Para isso, considera a distância restante,
+                            o ritmo recente de deslocamento e os tempos esperados nos trechos seguintes.
+                        </p>
+                        <ol>
+                            <li>O GPS informa a posição atual do ônibus.</li>
+                            <li>O JPBus identifica a rota e as próximas paradas atendidas.</li>
+                            <li>O sistema estima o tempo de percurso até cada parada com base nos dados disponíveis.</li>
+                            <li>A previsão é atualizada quando chegam novas posições ou informações da central.</li>
+                        </ol>
+                        <p>
+                            A estimativa é uma referência, pois o tempo real pode mudar com o trânsito,
+                            o embarque de passageiros e outras condições da viagem.
+                        </p>
+                    </article>
+                </details>
+
+                <details>
+                    <summary class="card">03. Identificação de atrasos</summary>
+                    <article class="card">
+                        <h2>Como o sistema identifica um atraso?</h2>
+                        <p>
+                            O JPBus compara o andamento observado da viagem com o horário previsto
+                            para a linha e para o trecho. Quando a diferença ultrapassa a tolerância
+                            definida para o serviço, a central pode sinalizar atraso e atualizar a previsão.
+                        </p>
+                        <p>Exemplo de acompanhamento:</p>
+                        <ol>
+                            <li>O ônibus tem um horário previsto para passar por determinada parada.</li>
+                            <li>A posição GPS e o horário da viagem são recebidos pela central.</li>
+                            <li>O sistema compara o andamento atual com o planejado.</li>
+                            <li>Se houver diferença relevante, a situação da linha e o tempo estimado são atualizados.</li>
+                        </ol>
+                        <p>
+                            Um atraso pode ser causado por congestionamentos, desvios, falhas operacionais
+                            ou variações normais do percurso. A indicação ajuda o passageiro a entender a
+                            situação, mas não substitui a confirmação operacional da empresa responsável.
+                        </p>
+                    </article>
+                </details>
+
+                <details>
+                    <summary class="card">04. Atualização das estimativas</summary>
+                    <article class="card">
+                        <h2>Informações que acompanham a viagem</h2>
+                        <p>
+                            As previsões são recalculadas conforme novos dados chegam à plataforma.
+                            Assim, uma estimativa pode aumentar ou diminuir durante a espera, refletindo
+                            as mudanças no deslocamento do ônibus.
+                        </p>
+                        <ul>
+                            <li>Novas posições GPS podem ajustar o tempo restante.</li>
+                            <li>Uma ocorrência registrada pode indicar mudança nas condições do trajeto.</li>
+                            <li>Um desvio pode alterar as paradas atendidas e o percurso previsto.</li>
+                            <li>Se os dados ficarem desatualizados, a informação pode ser marcada como aproximada ou indisponível.</li>
+                        </ul>
+                        <p>
+                            Os painéis nas paradas e os demais canais do JPBus podem receber os dados
+                            processados pela central para apresentar informações consistentes aos passageiros.
+                        </p>
+                    </article>
+                </details>
+
+                <details>
+                    <summary class="card">05. Exemplo prático</summary>
+                    <article class="card">
+                        <h2>Da localização à informação na parada</h2>
+                        <p>
+                            Imagine que uma passageira queira saber quando o ônibus de sua linha chegará.
+                            O veículo está em movimento e envia sua localização para o sistema.
+                        </p>
+                        <ol>
+                            <li>O JPBus recebe a posição mais recente do veículo.</li>
+                            <li>O sistema encontra a parada no itinerário da linha.</li>
+                            <li>Compara o deslocamento observado com os horários e dados do trecho.</li>
+                            <li>Calcula uma estimativa de chegada e verifica se há ocorrências registradas.</li>
+                            <li>A previsão atualizada é exibida para a passageira e pode ser enviada ao painel da parada.</li>
+                        </ol>
+                        <p>
+                            Se o ônibus encontrar trânsito intenso, uma nova atualização pode indicar
+                            mais minutos de espera. A previsão muda porque acompanha as condições observadas da viagem.
+                        </p>
+                    </article>
+                </details>
+
+                <details>
+                    <summary class="card">06. Precisão e limitações</summary>
+                    <article class="card">
+                        <h2>Como interpretar uma estimativa</h2>
+                        <p>
+                            O tempo informado é uma previsão baseada nos dados recebidos e pode variar
+                            até a chegada do ônibus. GPS com sinal fraco, transmissão atrasada, mudanças
+                            no trânsito e ocorrências inesperadas podem afetar o resultado.
+                        </p>
+                        <p>
+                            Por isso, o JPBus deve atualizar a estimativa sempre que houver novos dados
+                            e deixar claro quando a informação estiver desatualizada ou não puder ser calculada.
+                            A combinação de monitoramento e comunicação transparente ajuda o passageiro
+                            a planejar melhor sua espera.
+                        </p>
+                    </article>
+                </details>
+
             </section>
         </main>
+
+        <footer id="footer" style="background-color: #09468d;">
+            <p>Direitos reservados à JPBus.</p>
+        </footer>
 
     </div>
 

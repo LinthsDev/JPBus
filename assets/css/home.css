@@ -99,3 +99,8 @@ h2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+#li 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
